@@ -1,0 +1,5 @@
+---
+
+- src: https://github.com/wahlax/ansible-ssh_config-role
+  version: main
+  name: wahlax.ssh_config

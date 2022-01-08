@@ -1,0 +1,14 @@
+---
+
+- name: Configure ssh
+  ansible.builtin.include_role:
+    name: wahlax.ssh_config
+
+- name: Force sshd restart handler if required
+  meta: flush_handlers
+
+- name: Update CA certs
+  ansible.builtin.command: "{{item}}"
+  with_items:
+   - yum -y install ca-certificates
+   - /bin/update-ca-trust

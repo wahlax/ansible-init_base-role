@@ -1,0 +1,13 @@
+---
+
+dependencies:
+  - src: https://github.com/wahlax/ansible-ssh_config-role
+    version: main
+    name: wahlax.ssh_config
+
+galaxy_info:
+  role_name: init_base
+  author: wahlax
+  description: Adds necessary initialization for base vm
+  company: WAHLAX LLC
+  license: MIT
